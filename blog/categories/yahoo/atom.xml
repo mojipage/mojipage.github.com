@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: yahoo | MojiPage Blog]]></title>
+  <link href="http://mojipage.github.com/blog/categories/yahoo/atom.xml" rel="self"/>
+  <link href="http://mojipage.github.com/"/>
+  <updated>2012-08-27T02:09:12+10:00</updated>
+  <id>http://mojipage.github.com/</id>
+  <author>
+    <name><![CDATA[MojiPage Team]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MojiPage Supports Yahoo Mobile Widgets]]></title>
+    <link href="http://mojipage.github.com/2008/02/28/yahoo-mobile-widgets-support/"/>
+    <updated>2008-02-28T15:44:11+11:00</updated>
+    <id>http://mojipage.github.com/2008/02/28/yahoo-mobile-widgets-support</id>
+    <content type="html"><![CDATA[<p>In January, Yahoo <a href="http://mobile.yahoo.net/developer/blog/2008/01/06/welcome/">announced</a> the first preview of their mobile widget platform. Being in the mobile widget space, we were naturally excited about Yahoo's entry into the space as it validates our vision and proves that the market is sizable. We dove in and learned more about the platform.</p>
+
+<p>Essentially, you can create two types of thingies -- snippets and widgets. Snippets are a simplified and less flexible version of a widget, and can appear on the Yahoo! mobile home page or Yahoo! Go home widget. Widgets, on the other hand, are richer applications with more control over the user interface layout and may span multiple screens.</p>
+
+<p>Snippets and widgets are written in Blueprint -- a declarative markup language based on XForms. Since Blueprint is declarative, much of the logic resides on the developer's web server, which has the ability to dynamically serve Blueprint files to be rendered and interpreted by Yahoo servers or the Yahoo Go mobile app.</p>
+
+<p>This is a different architecture from our own MWA, but each has its own merits. From the end users' perspective, though, there is absolutely no difference. Anything that can be written using Blueprint (with server-side scripting) can be achieved using MWA, and vice versa. We think that Yahoo has done a great job in designing an elegant widget platform. In fact, we like it so much that we have developed a prototype to support Yahoo mobile widgets on MojiPage! We did say that MojiPage is a widget <em>platform</em>, didn't we?</p>
+
+<p>So if you're developing a widget for the Yahoo widget platform, we invite you to submit your snippets and widgets onto our sandbox.<a href="http://sb.mojipage.com/"></a></p>
+
+<p>To submit your widget:</p>
+
+<ol>
+<li><p>Visit the sandbox URL: <a href="http://mojipage.com/">http://mojipage.com/</a></p></li>
+<li><p>Click on "Add Widgets" on the top menu</p></li>
+<li><p>Scroll down half way down the page and click on the link under "Widgets Anywhere"</p></li>
+<li><p>Enter the URL to your zip archive (application bundle containing your config.xml and other metadata). We currently do not support application bundle upload yet.</p></li>
+<li><p>The MojiPage server will fetch the archive and install the snippet/widget, then make it available on the "Add Widgets" screen. Make sure you specify a less common description in the config.xml file to help you easily identify it.</p></li>
+</ol>
+
+
+<p>As this is an early preview, some blueprint tags may not be supported. However, we have tested it against the sample Twitter widget provided by Yahoo.</p>
+
+<p>Should you run into any issue, feel free to leave a comment below.</p>
+
+<p>Have fun hacking!</p>
+]]></content>
+  </entry>
+  
+</feed>

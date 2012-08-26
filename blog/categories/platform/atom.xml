@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: platform | MojiPage Blog]]></title>
+  <link href="http://mojipage.github.com/blog/categories/platform/atom.xml" rel="self"/>
+  <link href="http://mojipage.github.com/"/>
+  <updated>2012-08-27T02:09:12+10:00</updated>
+  <id>http://mojipage.github.com/</id>
+  <author>
+    <name><![CDATA[MojiPage Team]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[On Mobile, Worse is Better]]></title>
+    <link href="http://mojipage.github.com/2009/01/31/on-mobile-worse-is-better/"/>
+    <updated>2009-01-31T00:13:17+11:00</updated>
+    <id>http://mojipage.github.com/2009/01/31/on-mobile-worse-is-better</id>
+    <content type="html"><![CDATA[<p>Heard about "less is more" or KISS? Sure! How about <a href="http://en.wikipedia.org/wiki/Worse_is_better">Worse is Better</a>?</p>
+
+<!-- more -->
+
+
+<p><em>Worse is Better</em> (WiB) is an approach to software design popularized by <a href="http://en.wikipedia.org/wiki/Richard_P._Gabriel">Richard Gabriel</a>. It defines some guiding principles for software designers to achieve the right balance between simplicity, correctness, consistency and completeness (in more or less decreasing order of importance.) These are often contending factors in any system, and it's no different for a mobile platform.</p>
+
+<p>At MojiPage, we strive to be incomplete because everybody's idea of <em>completeness</em> is different; it's much better to work towards our users' rather than our idea of completeness.</p>
+
+<p>Engineers love <em>consistency</em>, because it makes our job easier. But what if consistency costs convenience? I'd say that in mobile, convenience is king! That's not to say that consistency is not important to the users. When applied to user interface, it affords an easier learning curve and causes less frustration. We strive to be consistent, but apply common sense when in doubt.</p>
+
+<p><em>Correctness</em> is a given in any software, especially as a platform. Developers and users depend on it, and nobody likes erroneous software. However, WiB says <em>"It is slightly better to be simple than correct."</em></p>
+
+<p>We concede with that, because emphasizing on <em>simplicity</em> in our user interface, API, as well as implementation gives us the ability to be agile and to evolve with our users' needs.</p>
+
+<p>Today, we are one step closer to simplicity bliss. We rolled out a UI refactoring release which makes your MojiPage <strong>simpler and more consistent, without sacrificing convenience</strong>. All widgets now have the ability to show a brief summary on your profile page. That summary is mostly static, but can be refreshed by the widget whenever it is executed (either periodically in the background, or manually when the full widget is viewed.)</p>
+
+<p>Here's how it looks like on the iPhone:</p>
+
+<p><img src="/images/2009/01/new-ui-on-iphone.png" alt="Simplified MojiPage Widgets on iPhone" /></p>
+
+<p>Currently, the only widgets that are using the summary view are: Flickr (showing thumbnails of interesting photos) and RSS reader (showing the latest entry in the feed.) Over the next few days, we will be enabling summary view for other widgets as well.</p>
+
+<p>This new user experience makes MojiPage load a lot faster, giving you a glance of everything that matters. We're confident that users on GPRS/EDGE network will find it snappier to use.</p>
+
+<p>If you prefer the old all-in-one page, bookmark or click on the link that says "Show all widgets on one page", and you'll get the previous interface back.</p>
+
+<p>Try it out, and decide if the new features are better or worse. As usual, we welcome any feedback!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MojiPage Supports Yahoo Mobile Widgets]]></title>
+    <link href="http://mojipage.github.com/2008/02/28/yahoo-mobile-widgets-support/"/>
+    <updated>2008-02-28T15:44:11+11:00</updated>
+    <id>http://mojipage.github.com/2008/02/28/yahoo-mobile-widgets-support</id>
+    <content type="html"><![CDATA[<p>In January, Yahoo <a href="http://mobile.yahoo.net/developer/blog/2008/01/06/welcome/">announced</a> the first preview of their mobile widget platform. Being in the mobile widget space, we were naturally excited about Yahoo's entry into the space as it validates our vision and proves that the market is sizable. We dove in and learned more about the platform.</p>
+
+<p>Essentially, you can create two types of thingies -- snippets and widgets. Snippets are a simplified and less flexible version of a widget, and can appear on the Yahoo! mobile home page or Yahoo! Go home widget. Widgets, on the other hand, are richer applications with more control over the user interface layout and may span multiple screens.</p>
+
+<p>Snippets and widgets are written in Blueprint -- a declarative markup language based on XForms. Since Blueprint is declarative, much of the logic resides on the developer's web server, which has the ability to dynamically serve Blueprint files to be rendered and interpreted by Yahoo servers or the Yahoo Go mobile app.</p>
+
+<p>This is a different architecture from our own MWA, but each has its own merits. From the end users' perspective, though, there is absolutely no difference. Anything that can be written using Blueprint (with server-side scripting) can be achieved using MWA, and vice versa. We think that Yahoo has done a great job in designing an elegant widget platform. In fact, we like it so much that we have developed a prototype to support Yahoo mobile widgets on MojiPage! We did say that MojiPage is a widget <em>platform</em>, didn't we?</p>
+
+<p>So if you're developing a widget for the Yahoo widget platform, we invite you to submit your snippets and widgets onto our sandbox.<a href="http://sb.mojipage.com/"></a></p>
+
+<p>To submit your widget:</p>
+
+<ol>
+<li><p>Visit the sandbox URL: <a href="http://mojipage.com/">http://mojipage.com/</a></p></li>
+<li><p>Click on "Add Widgets" on the top menu</p></li>
+<li><p>Scroll down half way down the page and click on the link under "Widgets Anywhere"</p></li>
+<li><p>Enter the URL to your zip archive (application bundle containing your config.xml and other metadata). We currently do not support application bundle upload yet.</p></li>
+<li><p>The MojiPage server will fetch the archive and install the snippet/widget, then make it available on the "Add Widgets" screen. Make sure you specify a less common description in the config.xml file to help you easily identify it.</p></li>
+</ol>
+
+
+<p>As this is an early preview, some blueprint tags may not be supported. However, we have tested it against the sample Twitter widget provided by Yahoo.</p>
+
+<p>Should you run into any issue, feel free to leave a comment below.</p>
+
+<p>Have fun hacking!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why is MojiPage the way it is?]]></title>
+    <link href="http://mojipage.github.com/2008/02/16/why-is-mojipage-the-way-it-is/"/>
+    <updated>2008-02-16T18:18:49+11:00</updated>
+    <id>http://mojipage.github.com/2008/02/16/why-is-mojipage-the-way-it-is</id>
+    <content type="html"><![CDATA[<p>It's time to drill a little deeper into the technical side of MojiPage, and why we did it that way. Let me address the latter point by quoting an article by Tom Yager's "Ahead of the Curve" column titled "<a href="http://weblog.infoworld.com/yager/archives/2008/02/the_mobile_app.html">The mobile app gold rush</a>":</p>
+
+<blockquote><p>The solution to the GUI dilemma is well in hand: HTML. While quality varies, all platforms have competent and improving Web browsers, which holds out the potential to use JavaScript, HTML, and CSS for user interfaces rather than cumbersome and proprietary APIs for text, graphics, motion, and input. Keep in mind as well that JavaScript has facilities for XML parsing, HTTP communication, and Web services. JavaScript performance is laughable on some handsets, but native or Java code fronted by an HTML/CSS/JavaScript GUI would impress and get apps to market faster.</p></blockquote>
+
+<p>The paragraph above nicely sums up our beliefs, which led us to our decision to base our platform on the lowest common denominator of MoMoMo devices (Yes, I just coined that term) -- XHTML.</p>
+
+<p>By requiring nothing but XHTML support, we can make ourselves useful to almost <em>any</em> phone that has data access today.</p>
+
+<p>This may sound like MojiPage is just a bunch of CGI scripts from the 90s. Well, not really..</p>
+
+<p>As I've said, MojiPage is a widget platform targeted at mobile devices, and that our widgets are written using standard web technologies -- XHTML, Javascript and CSS.</p>
+
+<p>When a widget is added to our platform (by giving us just the URL to the widget HTML file), our server downloads the widget HTML and executes the Javascript in it by emulating the browser environment. Since the Javascript runs on the server, it has full access to remote RSS feeds, XML and JSON content without cross-domain limitations and uses a combination of DOM the widget output and server-side extension APIs to accomplishes whatever features it needs to support. The result is a static chunk of HTML code which is then served to the client.</p>
+
+<p>Bear in mind that HTML is only the baseline on which we can gracefully degrade our service when the client is less capable of utilizing modern web standards. The technology and API is fully capable of serving Javascript to the client for enhanced interactivity. This will be easily demonstrated by the MojiPage iPhone interface that we are currently working on and made available at the end of March.</p>
+
+<p>This is cloud computing at its best, heterogeneous devices (with varying degrees of power) connecting to smart network of servers running code that pulls data from all over the Internet.</p>
+]]></content>
+  </entry>
+  
+</feed>

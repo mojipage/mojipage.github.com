@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: localization | MojiPage Blog]]></title>
+  <link href="http://mojipage.github.com/blog/categories/localization/atom.xml" rel="self"/>
+  <link href="http://mojipage.github.com/"/>
+  <updated>2012-08-27T02:09:12+10:00</updated>
+  <id>http://mojipage.github.com/</id>
+  <author>
+    <name><![CDATA[MojiPage Team]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MojiPage Speaks Japanese and Chinese]]></title>
+    <link href="http://mojipage.github.com/2008/06/22/mojipage-in-japanese-chinese/"/>
+    <updated>2008-06-22T15:03:33+10:00</updated>
+    <id>http://mojipage.github.com/2008/06/22/mojipage-in-japanese-chinese</id>
+    <content type="html"><![CDATA[<p><img src="/images/2008/06/moji-l10n.gif" alt="localized screenshot" /></p>
+
+<p>Recognizing that localization plays a critical role in the mobile user experience, we have localized parts of MojiPage into Japanese (日本語), Simplified Chinese (简体中文), and Traditional Chinese (繁體中文).</p>
+
+<p>If your browser tells us your preferred language, we will automatically detect and use it. Otherwise, you can go to the bottom of any page and select the language of your choice, then click the "Change" button. Also, NTT DoCoMo (<strong><a href="http://www.nttdocomo.co.jp/"><strong>NTTドコモ</strong></a></strong>) subscribers should automatically get the Japanese version of the site unless they have manually set it to a different language.</p>
+
+<p>We hope to bring more localization to our users from various parts of the world. If you'd like to see your language supported in MojiPage, drop us a note and we'll try our best to add it. Of course, we welcome users to submit translations, please contact us using our <a href="http://mojipage.com/contact/">feedback form</a>!</p>
+]]></content>
+  </entry>
+  
+</feed>

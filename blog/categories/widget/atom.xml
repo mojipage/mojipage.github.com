@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: widget | MojiPage Blog]]></title>
+  <link href="http://mojipage.github.com/blog/categories/widget/atom.xml" rel="self"/>
+  <link href="http://mojipage.github.com/"/>
+  <updated>2012-08-27T02:09:12+10:00</updated>
+  <id>http://mojipage.github.com/</id>
+  <author>
+    <name><![CDATA[MojiPage Team]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A FriendFeed Mobile Widget]]></title>
+    <link href="http://mojipage.github.com/2008/04/03/a-friendfeed-mobile-widget/"/>
+    <updated>2008-04-03T18:43:24+11:00</updated>
+    <id>http://mojipage.github.com/2008/04/03/a-friendfeed-mobile-widget</id>
+    <content type="html"><![CDATA[<p><img src="/images/2008/04/friendfeed-logo.png" alt="FriendFeed Logo" /></p>
+
+<p>We have just released a <a href="http://friendfeed.com/">FriendFeed</a> widget on MojiPage. It is currently available on our <a href="http://mojipage.com/">sandbox</a>. It supports authentication as well as paging. It is implemented using the <a href="http://blog.friendfeed.com/2008/03/friendfeed-api-extend-and-improve.html">recently released</a> <a href="http://friendfeed.com/api/">FriendFeed API</a>.</p>
+
+<p>FriendFeed is a great way for you to stay in touch with your friends, and with MojiPage you get to stay in touch while on the go. Check it out <a href="http://mojipage.com/u/wil/">here</a>.</p>
+
+<p>UPDATE June 16, 2008: We have merged the sandbox database with our live beta site http://mojipage.com/</p>
+]]></content>
+  </entry>
+  
+</feed>

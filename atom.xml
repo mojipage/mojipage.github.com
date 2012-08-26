@@ -1,180 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>MojiPage Blog</title>
-  <meta name="author" content="MojiPage Team">
-
-  
-  <meta name="description" content="Heard about &#8220;less is more&#8221; or KISS? Sure! How about Worse is Better? ">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://mojipage.github.com/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="MojiPage Blog" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">MojiPage Blog</a></h1>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:mojipage.github.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[MojiPage Blog]]></title>
+  <link href="http://mojipage.github.com/atom.xml" rel="self"/>
+  <link href="http://mojipage.github.com/"/>
+  <updated>2012-08-27T02:09:12+10:00</updated>
+  <id>http://mojipage.github.com/</id>
+  <author>
+    <name><![CDATA[MojiPage Team]]></name>
     
-      <h1 class="entry-title"><a href="/2009/01/31/on-mobile-worse-is-better/">On Mobile, Worse Is Better</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
+  <entry>
+    <title type="html"><![CDATA[On Mobile, Worse is Better]]></title>
+    <link href="http://mojipage.github.com/2009/01/31/on-mobile-worse-is-better/"/>
+    <updated>2009-01-31T00:13:17+11:00</updated>
+    <id>http://mojipage.github.com/2009/01/31/on-mobile-worse-is-better</id>
+    <content type="html"><![CDATA[<p>Heard about &#8220;less is more&#8221; or KISS? Sure! How about <a href="http://en.wikipedia.org/wiki/Worse_is_better">Worse is Better</a>?</p>
+
+<!-- more -->
 
 
-<time datetime="2009-01-31T00:13:17+11:00" pubdate data-updated="true">Jan 31<span>st</span>, 2009</time>
-        
-      </p>
-    
-  </header>
+<p><em>Worse is Better</em> (WiB) is an approach to software design popularized by <a href="http://en.wikipedia.org/wiki/Richard_P._Gabriel">Richard Gabriel</a>. It defines some guiding principles for software designers to achieve the right balance between simplicity, correctness, consistency and completeness (in more or less decreasing order of importance.) These are often contending factors in any system, and it&#8217;s no different for a mobile platform.</p>
 
+<p>At MojiPage, we strive to be incomplete because everybody&#8217;s idea of <em>completeness</em> is different; it&#8217;s much better to work towards our users&#8217; rather than our idea of completeness.</p>
 
-  <div class="entry-content"><p>Heard about &#8220;less is more&#8221; or KISS? Sure! How about <a href="http://en.wikipedia.org/wiki/Worse_is_better">Worse is Better</a>?</p>
+<p>Engineers love <em>consistency</em>, because it makes our job easier. But what if consistency costs convenience? I&#8217;d say that in mobile, convenience is king! That&#8217;s not to say that consistency is not important to the users. When applied to user interface, it affords an easier learning curve and causes less frustration. We strive to be consistent, but apply common sense when in doubt.</p>
 
-</div>
+<p><em>Correctness</em> is a given in any software, especially as a platform. Developers and users depend on it, and nobody likes erroneous software. However, WiB says <em>&#8220;It is slightly better to be simple than correct.&#8221;</em></p>
+
+<p>We concede with that, because emphasizing on <em>simplicity</em> in our user interface, API, as well as implementation gives us the ability to be agile and to evolve with our users&#8217; needs.</p>
+
+<p>Today, we are one step closer to simplicity bliss. We rolled out a UI refactoring release which makes your MojiPage <strong>simpler and more consistent, without sacrificing convenience</strong>. All widgets now have the ability to show a brief summary on your profile page. That summary is mostly static, but can be refreshed by the widget whenever it is executed (either periodically in the background, or manually when the full widget is viewed.)</p>
+
+<p>Here&#8217;s how it looks like on the iPhone:</p>
+
+<p><img src="http://mojipage.github.com/images/2009/01/new-ui-on-iphone.png" alt="Simplified MojiPage Widgets on iPhone" /></p>
+
+<p>Currently, the only widgets that are using the summary view are: Flickr (showing thumbnails of interesting photos) and RSS reader (showing the latest entry in the feed.) Over the next few days, we will be enabling summary view for other widgets as well.</p>
+
+<p>This new user experience makes MojiPage load a lot faster, giving you a glance of everything that matters. We&#8217;re confident that users on GPRS/EDGE network will find it snappier to use.</p>
+
+<p>If you prefer the old all-in-one page, bookmark or click on the link that says &#8220;Show all widgets on one page&#8221;, and you&#8217;ll get the previous interface back.</p>
+
+<p>Try it out, and decide if the new features are better or worse. As usual, we welcome any feedback!</p>
+]]></content>
+  </entry>
   
-  
-    <footer>
-      <a rel="full-article" href="/2009/01/31/on-mobile-worse-is-better/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2008/06/22/mojipage-in-japanese-chinese/">MojiPage Speaks Japanese and Chinese</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-06-22T15:03:33+10:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2008</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="/images/2008/06/moji-l10n.gif" alt="localized screenshot" /></p>
+  <entry>
+    <title type="html"><![CDATA[MojiPage Speaks Japanese and Chinese]]></title>
+    <link href="http://mojipage.github.com/2008/06/22/mojipage-in-japanese-chinese/"/>
+    <updated>2008-06-22T15:03:33+10:00</updated>
+    <id>http://mojipage.github.com/2008/06/22/mojipage-in-japanese-chinese</id>
+    <content type="html"><![CDATA[<p><img src="http://mojipage.github.com/images/2008/06/moji-l10n.gif" alt="localized screenshot" /></p>
 
 <p>Recognizing that localization plays a critical role in the mobile user experience, we have localized parts of MojiPage into Japanese (日本語), Simplified Chinese (简体中文), and Traditional Chinese (繁體中文).</p>
 
 <p>If your browser tells us your preferred language, we will automatically detect and use it. Otherwise, you can go to the bottom of any page and select the language of your choice, then click the &#8220;Change&#8221; button. Also, NTT DoCoMo (<strong><a href="http://www.nttdocomo.co.jp/"><strong>NTTドコモ</strong></a></strong>) subscribers should automatically get the Japanese version of the site unless they have manually set it to a different language.</p>
 
 <p>We hope to bring more localization to our users from various parts of the world. If you&#8217;d like to see your language supported in MojiPage, drop us a note and we&#8217;ll try our best to add it. Of course, we welcome users to submit translations, please contact us using our <a href="http://mojipage.com/contact/">feedback form</a>!</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2008/06/17/mojipage-at-internet-week-nyc/">MojiPage at Internet Week NYC</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-06-17T14:39:32+10:00" pubdate data-updated="true">Jun 17<span>th</span>, 2008</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>MojiPage attended two events during <a href="http://www.internetweekny.com/">Internet Week New York</a> – <a href="http://www.internetmarketingconference.com/newyork2008/index.html">IMC NY 2008</a> and <a href="http://mashable.com/2008/05/01/mashables-exhibit-hall-for-internet-week-ny-call-for-sponsors/">Mashable’s Exhibit Hall</a>.</p>
+  <entry>
+    <title type="html"><![CDATA[MojiPage at Internet Week NYC]]></title>
+    <link href="http://mojipage.github.com/2008/06/17/mojipage-at-internet-week-nyc/"/>
+    <updated>2008-06-17T14:39:32+10:00</updated>
+    <id>http://mojipage.github.com/2008/06/17/mojipage-at-internet-week-nyc</id>
+    <content type="html"><![CDATA[<p>MojiPage attended two events during <a href="http://www.internetweekny.com/">Internet Week New York</a> – <a href="http://www.internetmarketingconference.com/newyork2008/index.html">IMC NY 2008</a> and <a href="http://mashable.com/2008/05/01/mashables-exhibit-hall-for-internet-week-ny-call-for-sponsors/">Mashable’s Exhibit Hall</a>.</p>
 
 <p>At IMC NY, we shared with people our love for mobile widgets (as always!),  and talked about using mobile widgets in marketing campaigns.  We met, listened to and exchanged ideas with folks from many interesting mobile contents and service providers like <a href="http://socialight.com/">Socialight</a>, <a href="http://www.yojomobile.com/">Yojo Mobile</a> (creators of <a href="http://www.mizpee.com/">MizPee</a>), <a href="http://winksite.com/">Winksite</a> and <a href="http://www.blogtalkradio.com/">BlogTalkRadio</a> to name but a few.</p>
 
@@ -188,42 +83,15 @@
 <p>Big thanks to Lars Johansson and Lennart Svanberg once again for organizing the event.  We look forward to participating in the next IMC in Vancouver this September.</p>
 
 <p>Mashable&#8217;s Exhibit Hall (and networking party) was at the theatre district’s Touch lounge. It was packed by the time we got there. There were several web2.0 startups doing show-and-tell.  Other than the bar, we spent most of our time loitering around <a href="http://www.cafemom.com/">CafeMom</a>’s booth. It seemed strange at first that they would be giving out oven mitts as swags, but the mitts really came in handy when holding cold beers. CafeMom may sound like a niche idea to some, but if you do your math on how many new mums there are out there, these folks are dealing with a huge community here. And although we didn’t spend much time talking to the folks exhibiting <a href="http://concertattack.com/">ConcertAttack</a>, this is another social media site that we like a lot.  Focused on live concert contents, these guys make it really easy for fans and artists to share. We can’t wait to see what these 2 companies will bring to the mobile space down the road.  Lots of cool mobile widgets, please!</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2008/05/21/presenting-at-internet-marketing-conference-imc/">Presenting at the Internet Marketing Conference in NYC</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-05-21T14:40:20+10:00" pubdate data-updated="true">May 21<span>st</span>, 2008</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.internetmarketingconference.com/"><img src="/images/2008/05/imcinternational.gif" alt="IMC Logo" /></a> MojiPage will be presenting  at the <a href="http://www.internetmarketingconference.com/">Internet Marketing Conference</a> (IMC) in New York on June 4th, 2008. The theme at this IMC event is &#8220;Mobile Marketing: The Next Evolution&#8221; and that, to us, has the word WIDGETS written all over it.</p>
+  <entry>
+    <title type="html"><![CDATA[Presenting at the Internet Marketing Conference in NYC]]></title>
+    <link href="http://mojipage.github.com/2008/05/21/presenting-at-internet-marketing-conference-imc/"/>
+    <updated>2008-05-21T14:40:20+10:00</updated>
+    <id>http://mojipage.github.com/2008/05/21/presenting-at-internet-marketing-conference-imc</id>
+    <content type="html"><![CDATA[<p><a href="http://www.internetmarketingconference.com/"><img src="http://mojipage.github.com/images/2008/05/imcinternational.gif" alt="IMC Logo" /></a> MojiPage will be presenting  at the <a href="http://www.internetmarketingconference.com/">Internet Marketing Conference</a> (IMC) in New York on June 4th, 2008. The theme at this IMC event is &#8220;Mobile Marketing: The Next Evolution&#8221; and that, to us, has the word WIDGETS written all over it.</p>
 
 <p>From the <a href="http://www.internetmarketingconference.com/agenda.html">agenda</a>, here&#8217;s what we&#8217;re gonna be talking about:</p>
 
@@ -234,84 +102,30 @@
 <p>If you plan to be in the area at that time, please join us at the conference by registering <a href="http://www.regonline.com/imc_nyc_2008">here</a>.</p>
 
 <p>Incidentally,  this is part of <a href="http://www.internetweekny.com/">Internet Week New York</a> (3rd - 10th June) along with many other interesting events. We might hop into <a href="http://mashable.com/2008/05/01/mashables-exhibit-hall-for-internet-week-ny-call-for-sponsors/">Mashable&#8217;s Exhibit Hall</a>.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2008/04/03/a-friendfeed-mobile-widget/">A FriendFeed Mobile Widget</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-04-03T18:43:24+11:00" pubdate data-updated="true">Apr 3<span>rd</span>, 2008</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="/images/2008/04/friendfeed-logo.png" alt="FriendFeed Logo" /></p>
+  <entry>
+    <title type="html"><![CDATA[A FriendFeed Mobile Widget]]></title>
+    <link href="http://mojipage.github.com/2008/04/03/a-friendfeed-mobile-widget/"/>
+    <updated>2008-04-03T18:43:24+11:00</updated>
+    <id>http://mojipage.github.com/2008/04/03/a-friendfeed-mobile-widget</id>
+    <content type="html"><![CDATA[<p><img src="http://mojipage.github.com/images/2008/04/friendfeed-logo.png" alt="FriendFeed Logo" /></p>
 
 <p>We have just released a <a href="http://friendfeed.com/">FriendFeed</a> widget on MojiPage. It is currently available on our <a href="http://mojipage.com/">sandbox</a>. It supports authentication as well as paging. It is implemented using the <a href="http://blog.friendfeed.com/2008/03/friendfeed-api-extend-and-improve.html">recently released</a> <a href="http://friendfeed.com/api/">FriendFeed API</a>.</p>
 
 <p>FriendFeed is a great way for you to stay in touch with your friends, and with MojiPage you get to stay in touch while on the go. Check it out <a href="http://mojipage.com/u/wil/">here</a>.</p>
 
 <p>UPDATE June 16, 2008: We have merged the sandbox database with our live beta site http://mojipage.com/</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2008/02/28/yahoo-mobile-widgets-support/">MojiPage Supports Yahoo Mobile Widgets</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-02-28T15:44:11+11:00" pubdate data-updated="true">Feb 28<span>th</span>, 2008</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>In January, Yahoo <a href="http://mobile.yahoo.net/developer/blog/2008/01/06/welcome/">announced</a> the first preview of their mobile widget platform. Being in the mobile widget space, we were naturally excited about Yahoo&#8217;s entry into the space as it validates our vision and proves that the market is sizable. We dove in and learned more about the platform.</p>
+  <entry>
+    <title type="html"><![CDATA[MojiPage Supports Yahoo Mobile Widgets]]></title>
+    <link href="http://mojipage.github.com/2008/02/28/yahoo-mobile-widgets-support/"/>
+    <updated>2008-02-28T15:44:11+11:00</updated>
+    <id>http://mojipage.github.com/2008/02/28/yahoo-mobile-widgets-support</id>
+    <content type="html"><![CDATA[<p>In January, Yahoo <a href="http://mobile.yahoo.net/developer/blog/2008/01/06/welcome/">announced</a> the first preview of their mobile widget platform. Being in the mobile widget space, we were naturally excited about Yahoo&#8217;s entry into the space as it validates our vision and proves that the market is sizable. We dove in and learned more about the platform.</p>
 
 <p>Essentially, you can create two types of thingies &#8211; snippets and widgets. Snippets are a simplified and less flexible version of a widget, and can appear on the Yahoo! mobile home page or Yahoo! Go home widget. Widgets, on the other hand, are richer applications with more control over the user interface layout and may span multiple screens.</p>
 
@@ -337,42 +151,15 @@
 <p>Should you run into any issue, feel free to leave a comment below.</p>
 
 <p>Have fun hacking!</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2008/02/16/why-is-mojipage-the-way-it-is/">Why Is MojiPage the Way It Is?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-02-16T18:18:49+11:00" pubdate data-updated="true">Feb 16<span>th</span>, 2008</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>It&#8217;s time to drill a little deeper into the technical side of MojiPage, and why we did it that way. Let me address the latter point by quoting an article by Tom Yager&#8217;s &#8220;Ahead of the Curve&#8221; column titled &#8221;<a href="http://weblog.infoworld.com/yager/archives/2008/02/the_mobile_app.html">The mobile app gold rush</a>&#8221;:</p>
+  <entry>
+    <title type="html"><![CDATA[Why is MojiPage the way it is?]]></title>
+    <link href="http://mojipage.github.com/2008/02/16/why-is-mojipage-the-way-it-is/"/>
+    <updated>2008-02-16T18:18:49+11:00</updated>
+    <id>http://mojipage.github.com/2008/02/16/why-is-mojipage-the-way-it-is</id>
+    <content type="html"><![CDATA[<p>It&#8217;s time to drill a little deeper into the technical side of MojiPage, and why we did it that way. Let me address the latter point by quoting an article by Tom Yager&#8217;s &#8220;Ahead of the Curve&#8221; column titled &#8221;<a href="http://weblog.infoworld.com/yager/archives/2008/02/the_mobile_app.html">The mobile app gold rush</a>&#8221;:</p>
 
 <blockquote><p>The solution to the GUI dilemma is well in hand: HTML. While quality varies, all platforms have competent and improving Web browsers, which holds out the potential to use JavaScript, HTML, and CSS for user interfaces rather than cumbersome and proprietary APIs for text, graphics, motion, and input. Keep in mind as well that JavaScript has facilities for XML parsing, HTTP communication, and Web services. JavaScript performance is laughable on some handsets, but native or Java code fronted by an HTML/CSS/JavaScript GUI would impress and get apps to market faster.</p></blockquote>
 
@@ -389,42 +176,15 @@
 <p>Bear in mind that HTML is only the baseline on which we can gracefully degrade our service when the client is less capable of utilizing modern web standards. The technology and API is fully capable of serving Javascript to the client for enhanced interactivity. This will be easily demonstrated by the MojiPage iPhone interface that we are currently working on and made available at the end of March.</p>
 
 <p>This is cloud computing at its best, heterogeneous devices (with varying degrees of power) connecting to smart network of servers running code that pulls data from all over the Internet.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2008/02/05/introducing-mojipage/">Introducing MojiPage</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-02-05T12:57:46+11:00" pubdate data-updated="true">Feb 5<span>th</span>, 2008</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>&#8220;Hello world!&#8221;</p>
+  <entry>
+    <title type="html"><![CDATA[Introducing MojiPage]]></title>
+    <link href="http://mojipage.github.com/2008/02/05/introducing-mojipage/"/>
+    <updated>2008-02-05T12:57:46+11:00</updated>
+    <id>http://mojipage.github.com/2008/02/05/introducing-mojipage</id>
+    <content type="html"><![CDATA[<p>&#8220;Hello world!&#8221;</p>
 
 <p>More specifically, &#8220;Hello Mobile Internet World!&#8221;</p>
 
@@ -449,85 +209,7 @@
 
 
 <p>From this point on, we will be charging ahead to refine the product and develop new features. We will also be launching our developer support site soon, so stay tuned!</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/2009/01/31/on-mobile-worse-is-better/">On Mobile, Worse is Better</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2008/06/22/mojipage-in-japanese-chinese/">MojiPage Speaks Japanese and Chinese</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2008/06/17/mojipage-at-internet-week-nyc/">MojiPage at Internet Week NYC</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2008/05/21/presenting-at-internet-marketing-conference-imc/">Presenting at the Internet Marketing Conference in NYC</a>
-      </li>
-    
-      <li class="post">
-        <a href="/2008/04/03/a-friendfeed-mobile-widget/">A FriendFeed Mobile Widget</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - MojiPage Team -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

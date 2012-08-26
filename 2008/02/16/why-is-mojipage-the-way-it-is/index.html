@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Why is MojiPage the way it is? - MojiPage Blog</title>
+  <meta name="author" content="MojiPage Team">
+
+  
+  <meta name="description" content="It&#8217;s time to drill a little deeper into the technical side of MojiPage, and why we did it that way. Let me address the latter point by quoting &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mojipage.github.com/2008/02/16/why-is-mojipage-the-way-it-is/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="MojiPage Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">MojiPage Blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mojipage.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Why Is MojiPage the Way It Is?</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-02-16T18:18:49+11:00" pubdate data-updated="true">Feb 16<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>It&#8217;s time to drill a little deeper into the technical side of MojiPage, and why we did it that way. Let me address the latter point by quoting an article by Tom Yager&#8217;s &#8220;Ahead of the Curve&#8221; column titled &#8221;<a href="http://weblog.infoworld.com/yager/archives/2008/02/the_mobile_app.html">The mobile app gold rush</a>&#8221;:</p>
+
+<blockquote><p>The solution to the GUI dilemma is well in hand: HTML. While quality varies, all platforms have competent and improving Web browsers, which holds out the potential to use JavaScript, HTML, and CSS for user interfaces rather than cumbersome and proprietary APIs for text, graphics, motion, and input. Keep in mind as well that JavaScript has facilities for XML parsing, HTTP communication, and Web services. JavaScript performance is laughable on some handsets, but native or Java code fronted by an HTML/CSS/JavaScript GUI would impress and get apps to market faster.</p></blockquote>
+
+<p>The paragraph above nicely sums up our beliefs, which led us to our decision to base our platform on the lowest common denominator of MoMoMo devices (Yes, I just coined that term) &#8211; XHTML.</p>
+
+<p>By requiring nothing but XHTML support, we can make ourselves useful to almost <em>any</em> phone that has data access today.</p>
+
+<p>This may sound like MojiPage is just a bunch of CGI scripts from the 90s. Well, not really..</p>
+
+<p>As I&#8217;ve said, MojiPage is a widget platform targeted at mobile devices, and that our widgets are written using standard web technologies &#8211; XHTML, Javascript and CSS.</p>
+
+<p>When a widget is added to our platform (by giving us just the URL to the widget HTML file), our server downloads the widget HTML and executes the Javascript in it by emulating the browser environment. Since the Javascript runs on the server, it has full access to remote RSS feeds, XML and JSON content without cross-domain limitations and uses a combination of DOM the widget output and server-side extension APIs to accomplishes whatever features it needs to support. The result is a static chunk of HTML code which is then served to the client.</p>
+
+<p>Bear in mind that HTML is only the baseline on which we can gracefully degrade our service when the client is less capable of utilizing modern web standards. The technology and API is fully capable of serving Javascript to the client for enhanced interactivity. This will be easily demonstrated by the MojiPage iPhone interface that we are currently working on and made available at the end of March.</p>
+
+<p>This is cloud computing at its best, heterogeneous devices (with varying degrees of power) connecting to smart network of servers running code that pulls data from all over the Internet.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">MojiPage Team</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-02-16T18:18:49+11:00" pubdate data-updated="true">Feb 16<span>th</span>, 2008</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/platform/'>platform</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mojipage.github.com/2008/02/16/why-is-mojipage-the-way-it-is/" data-via="" data-counturl="http://mojipage.github.com/2008/02/16/why-is-mojipage-the-way-it-is/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2008/02/05/introducing-mojipage/" title="Previous Post: Introducing MojiPage">&laquo; Introducing MojiPage</a>
+      
+      
+        <a class="basic-alignment right" href="/2008/02/28/yahoo-mobile-widgets-support/" title="Next Post: MojiPage Supports Yahoo Mobile Widgets">MojiPage Supports Yahoo Mobile Widgets &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2009/01/31/on-mobile-worse-is-better/">On Mobile, Worse is Better</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2008/06/22/mojipage-in-japanese-chinese/">MojiPage Speaks Japanese and Chinese</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2008/06/17/mojipage-at-internet-week-nyc/">MojiPage at Internet Week NYC</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2008/05/21/presenting-at-internet-marketing-conference-imc/">Presenting at the Internet Marketing Conference in NYC</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2008/04/03/a-friendfeed-mobile-widget/">A FriendFeed Mobile Widget</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - MojiPage Team -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
